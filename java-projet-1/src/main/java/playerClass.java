@@ -8,7 +8,7 @@ abstract public class playerClass {
     String getFirstName(){
         return this.firstName;
     }
-    public void setFirstName(String inputNameW){
-        this.firstName = inputNameW;
+    public void setFirstName(String inputWarriorName){
+        this.firstName = inputWarriorName;
     }
 }

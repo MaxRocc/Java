@@ -1,5 +1,6 @@
 Main.class
-Wizard.class
+Mage.class
 Weapon.class
 playerClass.class
 Warrior.class
+combatTools.class
