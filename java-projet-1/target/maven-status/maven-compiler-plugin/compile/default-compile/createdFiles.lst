@@ -1,6 +1,8 @@
+combatItems.class
 Main.class
+attackItems.class
+defenseItems.class
 Mage.class
 Weapon.class
 playerClass.class
 Warrior.class
-combatTools.class
