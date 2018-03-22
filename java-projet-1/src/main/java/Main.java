@@ -1,11 +1,11 @@
+import javax.swing.*;
 import java.util.Scanner;//calling on java's built-in function that makes user inputs available
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Welcome");
         Scanner userInputs = new Scanner(System.in);
-        playerClass trentReznor = new Warrior();
-        System.out.println(trentReznor.getFirstName());
+        playerClass emptyWarrior = new Warrior();
 
         System.out.println("Do you want yo create a 1) Warrior or a 2) Mage ?");
 
@@ -17,18 +17,18 @@ public class Main {
                     break;
                 case 2: System.out.println("You chose to create a Mage");
                     break;
-                /*case 3: System.out.println("You chose to create a Warrior");
-                break;*/
-                default: System.out.println("Please type '1' for Warrior and '2' for Mage");
+                default: System.out.println("Please type : \n'1' for Warrior, \n'2' for Mage");
             }
         } while (choice>2);//even works when user input is not integer!
 
 
         System.out.println("Name your character = " );
         String inputWarriorName = userInputs.nextLine();
+        emptyWarrior.setFirstName(inputWarriorName);
 
-        trentReznor.setFirstName(inputWarriorName);
-
-        System.out.println("You called your character "+ trentReznor.getFirstName());
+        System.out.println("You called your character "+ emptyWarrior.getFirstName()+".\n Now assign it an image :" );
+        String inputImage = userInputs.nextLine();
+        emptyWarrior.setFirstName(inputImage);
+        System.out.println(emptyWarrior.getImage());
     }
 }
