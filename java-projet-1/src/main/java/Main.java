@@ -28,7 +28,12 @@ public class Main {
 
         System.out.println("You called your character "+ emptyWarrior.getFirstName()+".\n Now assign it an image :" );
         String inputImage = userInputs.nextLine();
-        emptyWarrior.setFirstName(inputImage);
+        emptyWarrior.setImage(inputImage);
         System.out.println(emptyWarrior.getImage());
+
+        System.out.println("Determine your character's Health Points = " );
+        Integer inputLife = userInputs.nextInt();
+        userInputs.nextLine();//empties userInputs' cache
+        emptyWarrior.setLife(inputLife);
     }
 }
