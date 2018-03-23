@@ -1,4 +1,4 @@
-public class Mage extends playerClass {//creation of the Mage class, inheriting from the superclass playerClass
+public class Mage extends PlayerClass {//creation of the Mage class, inheriting from the superclass PlayerClass
     private String spell;
     private boolean potion;
 
@@ -13,5 +13,10 @@ public class Mage extends playerClass {//creation of the Mage class, inheriting 
     }
     public void setPotion(boolean inputPotion){
         this.potion = inputPotion;
+    }
+
+    public String toString()
+    {
+        return super.toString() + "\nSpell = "+spell+"\nPotion = "+potion;//SUPER allows to access a method from the superclass
     }
 }
